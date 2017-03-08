@@ -18,7 +18,7 @@ AFRAME.registerComponent('rccolorchanger', {
   tick: function() {
     var sky = document.querySelector('#sky');
     var box = document.querySelector('#box');
-    var sphere = document.querySelector('#sphere');
+    //var sphere = document.querySelector('#sphere');
     var scene = document.querySelector('a-scene');
     var campos = scene.camera.getWorldPosition();
 
@@ -27,7 +27,7 @@ AFRAME.registerComponent('rccolorchanger', {
       //sky.setAttribute('opacity', 0);
       sky.setAttribute('src', 'images/pano_raw.JPG');
       sky.setAttribute('color', '0xFFFFFF');
-      box.setAttribute('scale', '0.0 0.0 0.0')
+      box.setAttribute('scale', '0.0 0.0 0.0');
       //sphere.setAttribute('radius', '0.0');
       //sky.setAttribute('opacity', 0.5);
       //mat.setAttribute('visible', true);
@@ -36,7 +36,7 @@ AFRAME.registerComponent('rccolorchanger', {
     {
       //sky.setAttribute('src', '');
       //set.setAttribute('color', '0xFFAAFF');
-      box.setAttribute('scale', '-200.0 -200.0 -200.0')
+      box.setAttribute('scale', '-200.0 -200.0 -200.0');
     }
   }
 });
