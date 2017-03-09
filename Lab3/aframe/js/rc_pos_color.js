@@ -18,7 +18,7 @@ AFRAME.registerComponent('rccolorchanger', {
   tick: function() {
     var sky = document.querySelector('#sky');
     var box = document.querySelector('#box');
-    //var sphere = document.querySelector('#sphere');
+    var sphere = document.querySelector('#sphere');
     var scene = document.querySelector('a-scene');
     var campos = scene.camera.getWorldPosition();
 
